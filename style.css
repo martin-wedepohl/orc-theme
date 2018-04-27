@@ -1,9 +1,8 @@
 /*
 Theme Name: Orchard Recovery Center
-Theme URI: http://themeforest.net/user/Veented
 Description: Customized Child Theme for Orchard Recovery Center using the Engage Theme from http://themeforest.net/user/Veented as a template
-Version: 1.1.0
-Author: Martin Wedepohl
+Version: 1.1.1
+Author: Martin Wedepohl (martin@orchardrecovery.com)
 Author URI: http://orchardrecovery.com
 Template: engage
 */
@@ -158,12 +157,24 @@ li.activeadmission {
 		max-height:50%;
 		margin: 0 auto !important;
 	}
+	#values_accordion h4.vc_tta-panel-title {
+		font-size: 16px;
+	}
+	#values_accordion i.vc_tta-controls-icon {
+		margin-left: -15px;
+	}
+	#values_accordion i.vc_tta-icon {
+		padding-left: 40px;
+	}
 }
 
 @media only screen and (max-width: 465px) {
    .movephonenumber {
       font-size: 80%;
    }   
+	#values_accordion h4.vc_tta-panel-title {
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 400px) {
