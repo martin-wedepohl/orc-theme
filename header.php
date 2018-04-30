@@ -1,3 +1,6 @@
+<?php
+	$content_links_color = esc_attr(engage_option('content_links_color'));
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -175,7 +178,7 @@
 								
                      <ul class="movephonenumber">
                         <li>
-                        <?php echo do_shortcode("[orc_contact contacts='tollfree' fonticon=true prefix='Toll Free: ' makelink=true fontcolor='#888888' linkclass='blackhighlight']"); ?>
+                        <?php echo do_shortcode("[orc_contact contacts='tollfree' fonticon=true prefix='Toll Free: ' makelink=true fontcolor='" . $content_links_color . "']"); ?>
                         </li>
                      </ul>
 							</div>
@@ -265,7 +268,7 @@
 							
                   <ul class="movephonenumber">
                      <li>
-                     <?php echo do_shortcode("[orc_contact contacts='tollfree' makelink=true fontcolor='#888888' linkclass='blackhighlight']"); ?>
+                     <?php echo do_shortcode("[orc_contact contacts='tollfree' makelink=true fontcolor='" . $content_links_color . "']"); ?>
                      </li>
                   </ul>
 						<?php echo '</div>'; ?>
