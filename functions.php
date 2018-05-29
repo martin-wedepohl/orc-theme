@@ -14,7 +14,7 @@ function engage_child_styles() {
    
    // Scripts
    wp_enqueue_script('orc-disable-parallax', get_stylesheet_directory_uri() . '/js/disableparallax.js', array('jquery'), '1.0.0.0', true);
-
+   wp_enqueue_script('orc-general', get_stylesheet_directory_uri() . '/js/general.js', array('jquery'), '1.0.0.0', true);
 
 }
 add_action( 'wp_enqueue_scripts', 'engage_child_styles' );
