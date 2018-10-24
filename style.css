@@ -258,6 +258,27 @@ li.activeadmission {
 	width: 75%;
 }
 
+table.fullcalendar,
+table.fullcalendar td {
+    border: 1px solid #e3e3e3;
+}
+
+table.fullcalendar td.transparent-left {
+    border-left: 1px solid transparent;
+}
+
+table.fullcalendar td.transparent-right {
+    border-right: 1px solid transparent;
+}
+
+table.fullcalendar td.align-right {
+    text-align: right;
+}
+
+table.fullcalendar td.month_name {
+    font-size: 1.2em;
+}
+
 #medical-careers-span,
 #clinical-careers-span,
 #administrative-careers-span,
@@ -344,6 +365,12 @@ li.activeadmission {
 
 /* Reduce maximum image size below medium tablet sizes */
 @media only screen and (max-width: 767px) {
+    table.fullcalendar td.month_name {
+        font-size: 1em;
+    }
+    table.fullcalendar td > a.em-calnav {
+        font-size: 0.9em;
+    }
 	.reduceimagesize {
 		max-width:50%;
 		max-height:50%;
