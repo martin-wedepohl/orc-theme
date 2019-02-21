@@ -9,15 +9,33 @@
  * 
  * Note that leaving the class names for the previous/next links will keep the AJAX navigation working.
  */
+
+// Calculate back one month and forward 1 year
+$today     = time();
+$lastmonth = strtotime('-1 month', $today);
+$nextyear  = strtotime('+1 year',  $today);
+
+// Hide links if too much in the past or too much in the future
+$displayPrev = ($calendar['month_start'] < $lastmonth) ? false : true;
+$displayNext = ($calendar['month_start'] > $nextyear)  ? false : true;
+
 $lastMonth    = date('F', mktime(12, 0, 0, $calendar['month_last'], 15, $calendar['year_last']));
 $nextMonth    = date('F', mktime(12, 0, 0, $calendar['month_next'], 15, $calendar['year_next']));
 ?>
 <table class="em-calendar fullcalendar">
 	<thead>
 		<tr>
+            <?php if($displayPrev) { ?>
 			<td class="transparent-right"><a class="em-calnav full-link em-calnav-prev" href="<?php echo esc_url($calendar['links']['previous_url']); ?>">&lt;&lt; <?php echo $lastMonth; ?></a></td>
+            <?php } else { ?>
+			<td class="transparent-right"></td>
+            <?php } ?>
 			<td class="month_name transparent-left transparent-right"><?php echo esc_html(date_i18n(get_option('dbem_full_calendar_month_format'), $calendar['month_start'])); ?></td>
+            <?php if($displayNext) { ?>
 			<td class="transparent-left align-right"><a class="em-calnav full-link em-calnav-next" href="<?php echo esc_url($calendar['links']['next_url']); ?>"> <?php echo $nextMonth; ?> &gt;&gt;</a></td>
+            <?php } else { ?>
+			<td class="transparent-left"></td>
+            <?php } ?>
 		</tr>
 	</thead>
 	<tbody>
