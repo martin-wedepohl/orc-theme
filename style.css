@@ -1,7 +1,7 @@
 /*
 Theme Name: Orchard Recovery Center
 Description: Customized Child Theme for Orchard Recovery Center using the Engage Theme from http://themeforest.net/user/Veented as a template
-Version: 1.1.8
+Version: 1.1.9
 Author: Martin Wedepohl (martin@orchardrecovery.com)
 Author URI: http://orchardrecovery.com
 Template: engage
@@ -175,6 +175,23 @@ li.activeadmission {
 	color:black;
 }
 
+.staffgridfontsize0p8 {
+	font-size: 0.8rem;
+	line-height: 1.0rem;
+}
+
+.staffgridfontsize0p8 > div > p {
+	font-size: 1rem;
+	line-height: 1rem;
+	margin-bottom: 0;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.staffgridcolorwhite {
+    color: #fff;
+}
+
 .visionAnchor > a > h2 {
    margin-bottom:0;
 	font-size: 28px;
@@ -310,7 +327,25 @@ table.fullcalendar td.month_name {
    color:red;
 }
 
+@media screen and (max-width: 1500px) {
+	.staffgridfontsize0p8 > div > p {
+		font-size: 0.9rem;
+        line-height: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.staffgridfontsize0p8 > div > p {
+		font-size: 0.7rem;
+        line-height: 0.9rem;
+	}
+}
+
 @media screen and (max-width: 1244px) {
+	.staffgridfontsize0p8 > div > p {
+		font-size: 0.6rem;
+        line-height: 0.8rem;
+	}
     .contactlargerfont span {
         font-size: 1.4em;
     }
@@ -330,6 +365,10 @@ table.fullcalendar td.month_name {
     .contactlargerfont span {
         font-size: 1.3em;
     }
+	.staffgridfontsize0p8 > div > p {
+		font-size: 0.5rem;
+		line-height: 0.7rem;
+	}
 }
 
 @media screen and (max-width: 1150px) {
@@ -383,6 +422,17 @@ table.fullcalendar td.month_name {
       -o-animation: none !important;
       animation: none !important;
 	}
+	.staffgridfontsize0p8 > div > p {
+		font-size: 0.6rem;
+		line-height: 0.7rem;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	.staffgridfontsize0p8 > div > p {
+		font-size: 0.5rem;
+		line-height: 0.7rem;
+	}
 }
 
 /* Reduce maximum image size below medium tablet sizes */
@@ -406,6 +456,11 @@ table.fullcalendar td.month_name {
 	}
 	#values_accordion i.vc_tta-icon {
 		padding-left: 40px;
+	}
+	.staffgridfontsize0p8 > div > p {
+		font-size: 1.4rem;
+		line-height: 1.4rem;
+        margin: 10px;
 	}
 }
 
