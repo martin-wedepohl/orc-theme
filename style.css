@@ -1,7 +1,7 @@
 /*
 Theme Name: Orchard Recovery Center
 Description: Customized Child Theme for Orchard Recovery Center using the Engage Theme from http://themeforest.net/user/Veented as a template
-Version: 1.1.9
+Version: 1.1.10
 Author: Martin Wedepohl (martin@orchardrecovery.com)
 Author URI: http://orchardrecovery.com
 Template: engage
@@ -69,6 +69,12 @@ blockquote p cite {
 	font-size: 24px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
+}
+
+.vntd-gmap-marker {
+	width: 0;
+	height: 0;
+	display: none;
 }
 
 .contactlargerfont span {
