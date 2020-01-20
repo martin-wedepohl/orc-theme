@@ -1,22 +1,22 @@
-/*
+/*!
 Theme Name: Orchard Recovery Center
 Description: Customized Child Theme for Orchard Recovery Center using the Engage Theme from http://themeforest.net/user/Veented as a template
-Version: 1.1.12
+Version: 1.2.0
 Author: Martin Wedepohl (martin@orchardrecovery.com)
-Author URI: http://orchardrecovery.com
+Author URI: https://wedepohlengineering.com
 Template: engage
 */
 
-@font-face { font-family: MuseoSans; src: url(fonts/museosans_100-webfont.ttf); font-weight: 100; }
-@font-face { font-family: MuseoSans; src: url(fonts/museosans_300-webfont.ttf); font-weight: 300; }
-@font-face { font-family: MuseoSans; src: url(fonts/museosans_500-webfont.ttf); font-weight: 500; }
-@font-face { font-family: MuseoSans; src: url(fonts/museosans_700-webfont.ttf); font-weight: 700; }
-@font-face { font-family: MuseoSans; src: url(fonts/museosans_900-webfont.ttf); font-weight: 900; }
-@font-face { font-family: MuseoSans; src: url(fonts/museosans_100_italic-webfont.ttf); font-weight: 100; font-style: italic; }
-@font-face { font-family: MuseoSans; src: url(fonts/museosans_300_italic-webfont.ttf); font-weight: 300; font-style: italic; }
-@font-face { font-family: MuseoSans; src: url(fonts/museosans_500_italic-webfont.ttf); font-weight: 500; font-style: italic; }
-@font-face { font-family: MuseoSans; src: url(fonts/museosans_700_italic-webfont.ttf); font-weight: 700; font-style: italic; }
-@font-face { font-family: MuseoSans; src: url(fonts/museosans_900_italic-webfont.ttf); font-weight: 900; font-style: italic; }
+@font-face { font-family: MuseoSans; src: url(dist/fonts/museosans_100-webfont.ttf); font-weight: 100; }
+@font-face { font-family: MuseoSans; src: url(dist/fonts/museosans_300-webfont.ttf); font-weight: 300; }
+@font-face { font-family: MuseoSans; src: url(dist/fonts/museosans_500-webfont.ttf); font-weight: 500; }
+@font-face { font-family: MuseoSans; src: url(dist/fonts/museosans_700-webfont.ttf); font-weight: 700; }
+@font-face { font-family: MuseoSans; src: url(dist/fonts/museosans_900-webfont.ttf); font-weight: 900; }
+@font-face { font-family: MuseoSans; src: url(dist/fonts/museosans_100_italic-webfont.ttf); font-weight: 100; font-style: italic; }
+@font-face { font-family: MuseoSans; src: url(dist/fonts/museosans_300_italic-webfont.ttf); font-weight: 300; font-style: italic; }
+@font-face { font-family: MuseoSans; src: url(dist/fonts/museosans_500_italic-webfont.ttf); font-weight: 500; font-style: italic; }
+@font-face { font-family: MuseoSans; src: url(dist/fonts/museosans_700_italic-webfont.ttf); font-weight: 700; font-style: italic; }
+@font-face { font-family: MuseoSans; src: url(dist/fonts/museosans_900_italic-webfont.ttf); font-weight: 900; font-style: italic; }
 
 html, body {
 	font-family: MuseoSans, Helvetica, Arial, sans-serif;
