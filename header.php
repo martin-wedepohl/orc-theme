@@ -1,5 +1,6 @@
 <?php
-	$content_links_color = esc_attr(engage_option('content_links_color'));
+	$content_links_color_array = engage_option('content_link_color');
+	$content_links_color = esc_attr($content_links_color_array['regular']);
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
