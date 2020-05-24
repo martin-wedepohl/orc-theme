@@ -1,7 +1,7 @@
 /*!
 Theme Name: Orchard Recovery Center
 Description: Customized Child Theme for Orchard Recovery Center using the Engage Theme from http://themeforest.net/user/Veented as a template
-Version: 1.2.0
+Version: 1.2.1
 Author: Martin Wedepohl (martin@orchardrecovery.com)
 Author URI: https://wedepohlengineering.com
 Template: engage
@@ -333,6 +333,14 @@ table.fullcalendar td.month_name {
    color:red;
 }
 
+#main-menu span {
+	font-size: 1em;
+}
+#main-navigation .main-menu > ul > li > a {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
 @media screen and (max-width: 1500px) {
 	.staffgridfontsize0p8 > div > p {
 		font-size: 0.9rem;
@@ -362,8 +370,8 @@ table.fullcalendar td.month_name {
 		font-size: 0.95em;
 	}
 	#main-navigation .main-menu > ul > li > a {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 }
 
@@ -382,8 +390,8 @@ table.fullcalendar td.month_name {
 		font-size: 0.90em;
 	}
 	#main-navigation .main-menu > ul > li > a {
-		padding-left: 7px;
-		padding-right: 7px;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 }
 
@@ -393,9 +401,13 @@ table.fullcalendar td.month_name {
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1065px) {
 	#main-menu span {
 		font-size: 0.85em;
+	}
+	#main-navigation .main-menu > ul > li > a {
+		padding-left: 3px;
+		padding-right: 3px;
 	}
 }
 
