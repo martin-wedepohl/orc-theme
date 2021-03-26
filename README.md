@@ -4,8 +4,8 @@
 * Contributors: [martinwedepohl](https://en.gravatar.com/martinwedepohl) 
 * Tags: options, orchard recovery center, wedepohl engineering
 * Requires at least: 4.7 or higher
-* Tested up to: 5.6
-* Stable tag: 1.2.2
+* Tested up to: 5.7
+* Stable tag: 1.2.3
 * License: [GPLv3 or later](https://www.gnu.org/licenses/gpl-3.0.html)
 
 ### Description
@@ -29,6 +29,9 @@ gulp watch
 ### Screenshots
 
 ### Changelog
+
+##### 1.2.3 2021-03-26
+Don't optimize contact-us since Contact Form 7 and JavaScript optimization have issues
 
 ##### 1.2.2 2020-12-30
 FIX: Typo getting engage_options content_link_color should be content_links_color
